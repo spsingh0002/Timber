@@ -15,7 +15,6 @@
 
 package com.naman14.timber;
 
-import android.Manifest;
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.ContentResolver;
@@ -25,7 +24,6 @@ import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.Intent;
 import android.content.ServiceConnection;
-import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.IBinder;
@@ -41,7 +39,7 @@ import com.naman14.timber.utils.TimberUtils.IdType;
 import java.util.Arrays;
 import java.util.WeakHashMap;
 
-import static android.support.v4.content.PermissionChecker.checkSelfPermission;
+import static androidx.core.content.PermissionChecker.checkSelfPermission;
 
 public class MusicPlayer {
 
